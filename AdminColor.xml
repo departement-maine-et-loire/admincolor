@@ -15,9 +15,9 @@
        </long>
    </description>
    <homepage>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor</homepage>
-   <download>https://github.com/</download>
+   <download>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor/archive/refs/heads/main.zip</download>
    <issues>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor/issues</issues>
-   <readme>https://github.com/</readme>
+   <readme>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor/blob/main/README.md</readme>
    <authors>
       <author>Yannick COMBA</author>
    </authors>
@@ -28,7 +28,7 @@
       <compatibility>~10.0</compatibility>
       <compatibility>~9.5</compatibility>
       <compatibility>~9.4</compatibility>
-      <download_url>http://link/to/your/file</download_url>
+      <download_url>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor.git</download_url>
     </version>
 </versions>
    <langs>
