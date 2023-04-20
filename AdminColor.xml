@@ -3,7 +3,7 @@
    <name>AdminColor</name>
    <key>admincolor</key>
    <state>stable</state>
-   <logo>AdminColor.png</logo>
+   <logo>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor/blob/main/AdminColor.png</logo>
    <description>
       <short>
          <fr>Un plugin affichant un élément visuel supplémentaire lors de l'utilisation du Super-Admin.</fr>
