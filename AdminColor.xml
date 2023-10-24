@@ -3,7 +3,7 @@
    <name>AdminColor</name>
    <key>admincolor</key>
    <state>stable</state>
-   <logo>https://raw.githubusercontent.com/departement-maine-et-loire/glpi-plugin-admincolor/main/AdminColor.png</logo>
+   <logo>https://raw.githubusercontent.com/departement-maine-et-loire/admincolor/main/AdminColor.png</logo>
    <description>
       <short>
          <fr>Plugin affichant un bandeau de couleur personnalisable lorsque le profil Super-Admin est sélectionné.</fr>
@@ -14,10 +14,10 @@
          <en>AdminColor plugin add a fixed colored banner on the top of the page when Super-Admin profile is selected. The AdminColor plugin adds a fixed colored banner to the top of the page, when the Super-Admin profile is selected. Its purpose is to draw the administrator's attention to use with caution the appropriate profile for the actions to be performed (Best Practices).</en>
        </long>
    </description>
-   <homepage>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor</homepage>
-   <download>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor/archive/refs/heads/main.zip</download>
-   <issues>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor/issues</issues>
-   <readme>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor/blob/main/README.md</readme>
+   <homepage>https://github.com/departement-maine-et-loire/admincolor</homepage>
+   <download>https://github.com/departement-maine-et-loire/admincolor/releases</download>
+   <issues>https://github.com/departement-maine-et-loire/admincolor/issues</issues>
+   <readme>https://github.com/departement-maine-et-loire/admincolor/blob/main/README.md</readme>
    <authors>
       <author>D&#xE9;partement de Maine-et-Loire</author>
       <author>Yannick COMBA</author>
@@ -29,7 +29,7 @@
       <compatibility>~10.0</compatibility>
       <compatibility>~9.5</compatibility>
       <compatibility>~9.4</compatibility>
-      <download_url>https://github.com/departement-maine-et-loire/glpi-plugin-admincolor.git</download_url>
+      <download_url>https://github.com/departement-maine-et-loire/admincolor.git</download_url>
     </version>
 </versions>
    <langs>
@@ -46,6 +46,6 @@
          </en>
    </tags>
    <screenshots>
-      <screenshot>https://raw.githubusercontent.com/departement-maine-et-loire/glpi-plugin-admincolor/main/screenshots/screenshot1.PNG</screenshot>
+      <screenshot>https://raw.githubusercontent.com/departement-maine-et-loire/admincolor/main/screenshots/screenshot1.PNG</screenshot>
    </screenshots>
 </root>
