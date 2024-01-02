@@ -12,11 +12,7 @@ if ($_SESSION["glpiactiveprofile"]["interface"] == "central") {
 
 $config = new PluginAdmincolorConfig();
 
-if($result = $config->getColors()) {
-      $config->showForm($result);
-} else {
-   $config->showForm();
-}
+$config->showForm($config->getColors());
 
 Html::closeForm();
 

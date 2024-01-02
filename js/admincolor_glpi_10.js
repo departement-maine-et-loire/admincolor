@@ -1,17 +1,14 @@
-var rootDoc = CFG_GLPI['root_doc'];
-var admincolorRootDoc = rootDoc + '/plugins/admincolor';
-
-  $.ajax({
-  url: admincolorRootDoc + "/inc/getColor.php",
-  type: "GET",
-  dataType: "json",
-  success: function(data) {
+$.ajax({
+url: CFG_GLPI.root_doc + '/' + GLPI_PLUGINS_PATH.admincolor + "/ajax/extract_json.php",
+type: "GET",
+dataType: "json",
+success: function(data) {
     color1 = data[0]
     color2 = data[1]
     fontSizePolice = data[2]
     language = data[3]
 
-    if(document.querySelector(".navbar-expand-xl") === null) {
+    if (document.querySelector(".navbar-expand-xl") === null) {
       const headerAnchor = document.querySelector("body");
 
       const divAdminColor = document.createElement('div');
@@ -32,7 +29,7 @@ var admincolorRootDoc = rootDoc + '/plugins/admincolor';
       adminColor.style.color = color2;
       adminColor.style.fontSize = fontSizePolice + "px";
       adminColor.style.fontWeight = "bold";
-      adminColor.style.padding = "0";
+      adminColor.style.padding = "0.5rem";
       adminColor.style.margin = "0";
 
       headerAnchor.insertBefore(divAdminColor, document.querySelector('#messages_after_redirect'));
@@ -56,7 +53,7 @@ var admincolorRootDoc = rootDoc + '/plugins/admincolor';
       followingAdminColor.style.color = color2;
       followingAdminColor.style.fontSize = fontSizePolice + "px";
       followingAdminColor.style.fontWeight = "bold";
-      followingAdminColor.style.padding = "0";
+      followingAdminColor.style.padding = "0.5rem";
       followingAdminColor.style.margin = "0";
 
       divAdminColor.insertBefore(divFollowingAdminColor, adminColor);
@@ -118,13 +115,15 @@ var admincolorRootDoc = rootDoc + '/plugins/admincolor';
 
     }
 
-    if (language === "fr-FR") {
-      document.querySelector('.admincolorlanguage #AClanguage #ACFR').setAttribute('selected', "");
-    } else if (language === "en-GB") {
-      document.querySelector('.admincolorlanguage #AClanguage #ACEN').setAttribute('selected', "");
+    if (document.querySelector('.admincolorlanguage #AClanguage #ACFR') != null) {
+        if (language === "fr-FR") {
+        document.querySelector('.admincolorlanguage #AClanguage #ACFR').setAttribute('selected', "");
+        } else if (language === "en-GB") {
+        document.querySelector('.admincolorlanguage #AClanguage #ACEN').setAttribute('selected', "");
+        }
     }
   },
-  error: function(data) {
-      console.log("erreur")
-  }
-  });
+    error: function(data) {
+        console.log(data)
+    }
+});
