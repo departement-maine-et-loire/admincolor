@@ -1,6 +1,6 @@
 <?php
 
-define('ADMINCOLOR_VERSION', '1.0.0');
+define('ADMINCOLOR_VERSION', '1.0.1');
 
 function plugin_init_admincolor() {
 
